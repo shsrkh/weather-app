@@ -140,6 +140,7 @@ body::before {
     border-radius: 15px;
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
+    margin-bottom: 10px;
 }
 
 .rain-img {
@@ -147,3 +148,11 @@ body::before {
 }
 
 /* END RAIN CONTAINER */
+
+/* HUMIDITY WIND CONTAINER */
+.humidity-wind-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}

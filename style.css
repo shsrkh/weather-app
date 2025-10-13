@@ -182,16 +182,16 @@ body::before {
 /* END FORECAST ITEMS CONTAINER */
 
 /* SECTION: MESSAGE */
-.search-city {
+.section-message {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 10px;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
-.message-img {
+.section-message img {
     width: 220px;
     height: auto;
 }

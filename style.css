@@ -180,3 +180,19 @@ body::before {
     padding: 12px;
 }
 /* END FORECAST ITEMS CONTAINER */
+
+/* SECTION: MESSAGE */
+.search-city {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 15%;
+}
+
+.message-img {
+    width: 220px;
+    height: auto;
+}
+/* END SECTION: MESSAGE */

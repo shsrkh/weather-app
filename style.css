@@ -33,7 +33,7 @@ body::before {
 
 .main-container {
     width: 395px;
-    height: 485px;
+    height: 500px;
     background: linear-gradient(to top, rgb(92, 103, 80, 0.15), rgba(185, 207, 162, 0.15));
     border-radius: 50px;
     -webkit-backdrop-filter: blur(50px);
@@ -101,7 +101,7 @@ body::before {
 }
 
 .weather-img {
-    min-width: 90px;
+    width: 90px;
     height: auto;
 }
 
@@ -122,7 +122,8 @@ body::before {
 }
 
 .sunrise-sunset-img {
-    min-width: 20px;
+    width: 20px;
+    height: auto;
 }
 
 /* END CURRENT WEATHER CONTAINER */
@@ -156,3 +157,26 @@ body::before {
     align-items: center;
     margin-bottom: 10px;
 }
+/* END HUMIDITY WIND CONTAINER */
+
+/* FORECAST ITEMS CONTAINER */
+.forecast-items-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 7px;
+}
+
+.forecast-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgb(92, 103, 80, 0.15), rgba(185, 207, 162, 0.15));
+    border-radius: 25px;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    padding: 12px;
+}
+/* END FORECAST ITEMS CONTAINER */

@@ -38,6 +38,16 @@ async function updateWeatherInfo(city) {
         showDisplaySection(notFoundSection)
         return
     }
+    console.log(weatherData)
+
+    const {
+        name: cityName,
+        sys: {country},
+        main: {temp, humidity},
+        weather: [{ id, main, description }],
+        wind: {speed}
+    } = weatherData
+
     showDisplaySection(weatherInfoSection)
 }
 
@@ -45,4 +55,22 @@ function showDisplaySection(section) {
     [weatherInfoSection, searchCitySection, notFoundSection]
         .forEach(section => section.style.display = 'none')
     section.style.display = 'flex'
+}
+
+function convertUnixToTime(unixTimestamp) {
+    const date = new Date(unixTimestamp * 1000)
+
+    const hours = date.getHours()
+    const minutes = date.getMinutes()
+
+    return hours + ':' + minutes
+}
+
+function getDayDuration(sunriseUnix, sunsetUnix) {
+    const durationInSeconds = sunsetUnix - sunriseUnix
+
+    const hours = Math.floor(durationInSeconds / 3600)
+    const minutes = Math.floor((durationInSeconds % 3600) / 60)
+
+    return `${hours} h ${minutes} m`
 }

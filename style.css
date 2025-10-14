@@ -80,6 +80,11 @@ body::before {
 /* END INPUT CONTAINER */
 
 /* CURRENT WEATHER CONTAINER */
+.weather-info {
+    display: flex;
+    flex-direction: column;
+}
+
 .current-weather {
     display: flex;
     flex-direction: column;
